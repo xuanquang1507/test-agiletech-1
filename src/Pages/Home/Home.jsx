@@ -4,6 +4,7 @@ import img1 from "../../image/image1 1.png";
 import "./style.css";
 import Features from "./Features";
 import Testimonials from "./Testimonials";
+import Footer from "../../component/Footer";
 
 const Home = () => {
   return (
@@ -34,6 +35,7 @@ const Home = () => {
       </div>
       <Features />
       <Testimonials />
+      <Footer />
     </div>
   );
 };
