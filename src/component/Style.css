@@ -1,56 +1,111 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
 }
 
-.header-btn button{
-    width: 208.7px; 
-    height: 59.63px; 
-    background: #9C69E2;
-    box-shadow: 0px 5px 5px rgba(74.99, 92.92, 103.51, 0.10);
+.header-btn button {
+  width: 208.7px;
+  height: 59.63px;
+  background: #9c69e2;
+  box-shadow: 0px 5px 5px rgba(74.99, 92.92, 103.51, 0.1);
+  border-radius: 50px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 30px;
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: 0.08px;
+  word-wrap: break-word;
+}
+
+/* modal */
+
+/* Modal.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Một lớp mờ đen để tạo hiệu ứng nền */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-post {
+  background: #fff; /* Nền của modal */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-edit {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-buttons button {
+  padding: 10px;
+  background-color: #69e27f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 1025px) {
+  .header-btn button {
+    width: 150px;
+    height: 45px;
+    background: #9c69e2;
+    box-shadow: 0px 5px 5px rgba(74.99, 92.92, 103.51, 0.1);
     border-radius: 50px;
-    cursor: pointer; 
+    cursor: pointer;
     color: #fff;
     font-weight: 500;
     margin-left: 30px;
     font-size: 16px;
-    line-height: 25.60px;
+    line-height: 25.6px;
     letter-spacing: 0.08px;
-    word-wrap: break-word
+    word-wrap: break-word;
+  }
 }
-
-@media (max-width: 1025px) {
-    .header-btn button{
-        width: 150px; 
-        height: 45px; 
-        background: #9C69E2;
-        box-shadow: 0px 5px 5px rgba(74.99, 92.92, 103.51, 0.10);
-        border-radius: 50px;
-        cursor: pointer; 
-        color: #fff;
-        font-weight: 500;
-        margin-left: 30px;
-        font-size: 16px;
-        line-height: 25.60px;
-        letter-spacing: 0.08px;
-        word-wrap: break-word
-    }
-  }
 @media (max-width: 767px) {
-    .header-btn button{
-        width: 150px; 
-        height: 45px; 
-        background: #9C69E2;
-        box-shadow: 0px 5px 5px rgba(74.99, 92.92, 103.51, 0.10);
-        border-radius: 50px;
-        cursor: pointer; 
-        color: #fff;
-        font-weight: 500;
-        margin-left: 30px;
-        font-size: 16px;
-        line-height: 25.60px;
-        letter-spacing: 0.08px;
-        word-wrap: break-word
-    }
+  .header-btn button {
+    width: 150px;
+    height: 45px;
+    background: #9c69e2;
+    box-shadow: 0px 5px 5px rgba(74.99, 92.92, 103.51, 0.1);
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 30px;
+    font-size: 16px;
+    line-height: 25.6px;
+    letter-spacing: 0.08px;
+    word-wrap: break-word;
   }
+}

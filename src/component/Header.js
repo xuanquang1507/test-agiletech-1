@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../image/Logo.png";
 import "./Style.css";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
-  const handleLogout = () => {};
+  const navigate = useNavigate();
+  const [isLoggedIn, setLoggedIn] = useState(true);
+
+  const handlePost = () => {
+    navigate("/post");
+  };
+
+  const handleLogin = () => {
+    setLoggedIn(true);
+    navigate("/");
+  };
+
+  const handleLogout = () => {
+    setLoggedIn(false);
+  };
+
   return (
     <>
       <div className="header">
@@ -11,8 +27,14 @@ const Header = () => {
           <img src={logo} alt="logo" />
         </div>
         <div className="header-btn">
-          <button>Profile</button>
-          <button onClick={handleLogout}>Logout</button>
+          {isLoggedIn ? (
+            <>
+              <button onClick={handlePost}>Profile</button>
+              <button onClick={handleLogout}>Logout</button>
+            </>
+          ) : (
+            <button onClick={handleLogin}>Login</button>
+          )}
         </div>
       </div>
     </>

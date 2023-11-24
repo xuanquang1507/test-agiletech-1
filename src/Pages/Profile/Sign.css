@@ -1,11 +1,18 @@
 /* Sign.css */
 
-.container {
+/* .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  
+} */
+.signIn{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo {
